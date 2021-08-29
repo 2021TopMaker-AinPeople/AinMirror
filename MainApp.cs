@@ -21,12 +21,18 @@ namespace AinMirror
         override protected void OnCreate()
         {
             base.OnCreate();
+            Initialize();
+        }
 
-            // NOTE To use theme.xaml, uncomment below line.
-            // ThemeManager.ApplyTheme(new Theme(Tizen.Applications.Application.Current.DirectoryInfo.Resource + "theme/theme.xaml"));
+        // NOTE To use theme.xaml, uncomment below line.
+        // ThemeManager.ApplyTheme(new Theme(Tizen.Applications.Application.Current.DirectoryInfo.Resource + "theme/theme.xaml"));
 
-            //GetDefaultWindow().AddAvailableOrientation(Window.WindowOrientation.Portrait);
-            //GetDefaultWindow().SetPreferredOrientation(Window.WindowOrientation.Portrait);
+        //GetDefaultWindow().AddAvailableOrientation(Window.WindowOrientation.Portrait);
+        //GetDefaultWindow().SetPreferredOrientation(Window.WindowOrientation.Portrait);
+
+        void Initialize()
+        {
+            ThemeManager.ApplyTheme(new Theme(Tizen.Applications.Application.Current.DirectoryInfo.Resource + "theme/theme.xaml"));
 
             _camera = new TCamera(Tizen.Multimedia.CameraDevice.Rear);
 
@@ -102,8 +108,11 @@ namespace AinMirror
             //GetDefaultWindow().KeyEvent += OnScene1KeyEvent;
 
             //GetDefaultWindow().Add(new Scene1Page());
+            GetDefaultWindow().Add(new MainAppPage());
+
             GetDefaultWindow().KeyEvent += OnScene1KeyEvent;
         }
+        
 
         private void OnScene1KeyEvent(object sender, Window.KeyEventArgs e)
         {

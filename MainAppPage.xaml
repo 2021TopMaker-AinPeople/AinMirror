@@ -22,8 +22,8 @@
     <Button x:Name="Button1"                
               Text="one" 
               TextColor="White"
-              Size="200,80"
-              Position="-50,50"
+              Size="300,80"
+              Position="-100,50"
               ParentOrigin="TopRight"
               PivotPoint="TopRight"              
               PositionUsesPivotPoint="true"
@@ -36,7 +36,7 @@
         ParentOrigin="BottomCenter"
         PivotPoint="BottomCenter"
         PositionUsesPivotPoint="true"
-        Padding="150,0,150,5">
+        Padding="150,0,100,0">
 
         <View.Layout>
             <LinearLayout LinearOrientation="Horizontal" CellPadding="300,0"></LinearLayout>

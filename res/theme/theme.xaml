@@ -7,43 +7,10 @@
   <!-- Put styles with x:Key here -->
     <c:ButtonStyle
     x:Key="ButtonStyle1"
-    CornerRadius="20">
-        <c:ButtonStyle.BackgroundColor>
-            <Selector x:TypeArguments="Color" Normal="#63ACE5" Pressed="#2A4D69"/>
-        </c:ButtonStyle.BackgroundColor>
-    </c:ButtonStyle>
-
-    <c:ButtonStyle
-    x:Key="ButtonStyle2"
-    CornerRadius="10">
-        <c:ButtonStyle.BackgroundColor>
-            <Selector x:TypeArguments="Color" Normal="#F6ABB6" Pressed="#EEC9D2"/>
-        </c:ButtonStyle.BackgroundColor>
-        <c:ButtonStyle.Text>
-            <TextLabelStyle PixelSize="26">
-                <TextLabelStyle.TextColor>
-                    <Selector x:TypeArguments="Color" Normal="#00000088" Pressed="#FFFFFF88"/>
-                </TextLabelStyle.TextColor>
-            </TextLabelStyle>
-        </c:ButtonStyle.Text>
-    </c:ButtonStyle>
-
-    <!--<c:ButtonStyle
-    x:Key="ButtonStyle3"
-    CornerRadius="0">
-        <c:ButtonStyle.BackgroundImage>
-            <Selector x:TypeArguments="x:String"
-        Normal="{ResourcePath button_bg_normal.png}"
-        Pressed="{ResourcePath button_bg_pressed.png}"/>
-        </c:ButtonStyle.BackgroundImage>
-    </c:ButtonStyle>-->
-
-    <c:ButtonStyle
-    x:Key="ButtonStyle3"
-    CornerRadius="5"
-    Size="300, 80"
+    CornerRadius="20"
+    Size="250, 80"
     IconRelativeOrientation="Left"
-    ItemSpacing="10">
+    ItemSpacing="20">
         <c:ButtonStyle.BackgroundColor>
             <Selector x:TypeArguments="Color" Normal="#F6ABB6" Pressed="#EEC9D2"/>
         </c:ButtonStyle.BackgroundColor>
@@ -51,7 +18,7 @@
         <c:ButtonStyle.Text>
             <TextLabelStyle PixelSize="26">
                 <TextLabelStyle.TextColor>
-                    <Selector x:TypeArguments="Color" Normal="#00000088" Pressed="#FFFFFF88"/>
+                    <Selector x:TypeArguments="Color" Normal="#63ACE5" Pressed="#2A4D69"/>
                 </TextLabelStyle.TextColor>
             </TextLabelStyle>
         </c:ButtonStyle.Text>
@@ -69,22 +36,93 @@
     </c:ButtonStyle>
 
     <c:ButtonStyle
-    x:Key="ButtonStyle5"
-    IconRelativeOrientation="Right"
-    ItemSpacing="10">
+    x:Key="ButtonStyle2"
+    CornerRadius="20"
+    Size="250, 80"
+    IconRelativeOrientation="Left"
+    ItemSpacing="20">
+        <c:ButtonStyle.BackgroundColor>
+            <Selector x:TypeArguments="Color" Normal="#CCCCCC" Pressed="#666666"/>
+        </c:ButtonStyle.BackgroundColor>
+
         <c:ButtonStyle.Text>
-            <TextLabelStyle PixelSize="20" TextColor="#555555"/>
+            <TextLabelStyle PixelSize="26">
+                <TextLabelStyle.TextColor>
+                    <Selector x:TypeArguments="Color" Normal="#00000088" Pressed="#FFFFFF88"/>
+                </TextLabelStyle.TextColor>
+            </TextLabelStyle>
         </c:ButtonStyle.Text>
+
         <c:ButtonStyle.Icon>
-            <ImageViewStyle Size="30, 30">
+            <ImageViewStyle Size="50, 50">
                 <ImageViewStyle.ResourceUrl>
                     <Selector x:TypeArguments="x:String"
-            Normal="{ResourcePath check_icon_normal.png}"
-            Pressed="{ResourcePath check_icon_pressed.png}"
-            Selected="{ResourcePath check_icon_selected.png}"/>
+                        Normal="{ResourcePath images/setting.png}"
+                        Pressed="{ResourcePath images/setting_pressed.png}"/>
                 </ImageViewStyle.ResourceUrl>
             </ImageViewStyle>
         </c:ButtonStyle.Icon>
+
+    </c:ButtonStyle>
+
+    <c:ButtonStyle
+    x:Key="ButtonStyle3"
+    CornerRadius="20"
+    Size="250, 80"
+    IconRelativeOrientation="Left"
+    ItemSpacing="20">
+        <c:ButtonStyle.BackgroundColor>
+            <Selector x:TypeArguments="Color" Normal="#63ACE5" Pressed="#2A4D69"/>
+        </c:ButtonStyle.BackgroundColor>
+
+        <c:ButtonStyle.Text>
+            <TextLabelStyle PixelSize="26">
+                <TextLabelStyle.TextColor>
+                    <Selector x:TypeArguments="Color" Normal="#00000088" Pressed="#FFFFFF88"/>
+                </TextLabelStyle.TextColor>
+            </TextLabelStyle>
+        </c:ButtonStyle.Text>
+
+        <c:ButtonStyle.Icon>
+            <ImageViewStyle Size="50, 50">
+                <ImageViewStyle.ResourceUrl>
+                    <Selector x:TypeArguments="x:String"
+                        Normal="{ResourcePath images/face-mask.png}"
+                        Pressed="{ResourcePath images/face-mask_pressed.png}"/>
+                </ImageViewStyle.ResourceUrl>
+            </ImageViewStyle>
+        </c:ButtonStyle.Icon>
+
+    </c:ButtonStyle>
+
+    <c:ButtonStyle
+    x:Key="ButtonStyle4"
+    CornerRadius="20"
+    Size="250, 80"
+    IconRelativeOrientation="Left"
+    ItemSpacing="20">
+        <c:ButtonStyle.BackgroundColor>
+            <Selector x:TypeArguments="Color" Normal="#CC99CC" Pressed="#660066"/>
+        </c:ButtonStyle.BackgroundColor>
+
+        <c:ButtonStyle.Text>
+            <TextLabelStyle PixelSize="26">
+                <TextLabelStyle.TextColor>
+                    <Selector x:TypeArguments="Color" Normal="#63ACE5" Pressed="#2A4D69"/>
+                </TextLabelStyle.TextColor>
+            </TextLabelStyle>
+        </c:ButtonStyle.Text>
+
+        <c:ButtonStyle.Icon>
+            <ImageViewStyle Size="50, 50">
+                <ImageViewStyle.ResourceUrl>
+                    <Selector x:TypeArguments="x:String"
+                        Normal="{ResourcePath images/face-detection.png}"
+                        Pressed="{ResourcePath images/face-detection_pressed.png}"/>
+                </ImageViewStyle.ResourceUrl>
+            </ImageViewStyle>
+        </c:ButtonStyle.Icon>
+
     </c:ButtonStyle>
 
 </Theme>

@@ -27,7 +27,10 @@ namespace AinMirror
         private void OnButtonClicked3(object sender, Tizen.NUI.Components.ClickedEventArgs e)
         {
             OutputText.Text += $"\n효과주기: 분석된 얼굴에 효과를 입힙니다.";
-            OutputText.TextColor = Color.Magenta;            
+            OutputText.TextColor = Color.Magenta;
+
+            Window.Instance.GetDefaultLayer().Add(new VideoPopup());
+            this.Show();
         }
 
         private void OnButtonClicked4(object sender, Tizen.NUI.Components.ClickedEventArgs e)

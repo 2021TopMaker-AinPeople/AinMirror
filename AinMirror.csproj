@@ -1,4 +1,4 @@
-<Project Sdk="Tizen.NET.Sdk/1.1.6">
+﻿<Project Sdk="Tizen.NET.Sdk/1.1.6">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -14,6 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="MainPage1.xaml" />
+    <None Remove="VideoPopup.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,12 +24,21 @@
     <EmbeddedResource Include="MainPage1.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="VideoPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Tizen.NET" Version="9.0.0.16500" />
     <PackageReference Include="Tizen.NET.Internals" Version="9.0.0.16500" />
     <PackageReference Include="Tizen.NUI.XamlBuild" Version="1.0.28" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MainPage2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 
   <PropertyGroup>

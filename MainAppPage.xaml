@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<View x:Class="AinMirror.MainAppPage"
+        xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:c="clr-namespace:Tizen.NUI.Components;assembly=Tizen.NUI.Components"
+        xmlns:local="clr-namespace:AinMirror"
+        WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+        HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+    <!--BackgroundColor="White">-->
+    <View.Layout>
+        <AbsoluteLayout></AbsoluteLayout>
+    </View.Layout>
+
+    <TextEditor x:Name="OutputText"    
+    PixelSize="15" 
+    Size="300,200"        
+    Position="50,50"
+    BackgroundColor="#EEEEEE"
+    EnableEditing="False"
+    PrimaryCursorPosition="99999" />
+
+    <Button x:Name="Button1"                
+              Text="one" 
+              TextColor="White"
+              Size="200,80"
+              Position="-50,50"
+              ParentOrigin="TopRight"
+              PivotPoint="TopRight"              
+              PositionUsesPivotPoint="true"
+              Clicked="OnButtonClicked1" />
+
+
+    <View
+        WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+        HeightSpecification="240"
+        ParentOrigin="BottomCenter"
+        PivotPoint="BottomCenter"
+        PositionUsesPivotPoint="true"
+        Padding="150,0,150,5">
+
+        <View.Layout>
+            <LinearLayout LinearOrientation="Horizontal" CellPadding="300,0"></LinearLayout>
+        </View.Layout>
+
+        <Button x:Name="Button2" 
+              Text="Two"               
+              Size="300,80"
+              TextColor="White"
+              Clicked="OnButtonClicked2" />
+
+        <c:Button x:Name="Button3"              
+              StyleName="ButtonStyle3"             
+              Text="Three"                          
+              TextColor="White"
+              Clicked="OnButtonClicked3" />
+
+        <Button x:Name="Button4" 
+              Text="Four" 
+              Size="300,80"
+              TextColor="White"
+              Clicked="OnButtonClicked4" />
+    </View>
+
+</View>

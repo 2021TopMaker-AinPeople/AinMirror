@@ -1,5 +1,7 @@
-﻿using Tizen.NUI;
+﻿using Tizen.Applications;
+using Tizen.NUI;
 using Tizen.NUI.BaseComponents;
+
 
 namespace AinMirror
 {
@@ -7,7 +9,7 @@ namespace AinMirror
     {
         public MainAppPage()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void OnButtonClicked1(object sender, Tizen.NUI.Components.ClickedEventArgs e)
@@ -25,13 +27,16 @@ namespace AinMirror
         private void OnButtonClicked3(object sender, Tizen.NUI.Components.ClickedEventArgs e)
         {
             OutputText.Text += $"\n효과주기: 분석된 얼굴에 효과를 입힙니다.";
-            OutputText.TextColor = Color.Magenta;
+            OutputText.TextColor = Color.Magenta;            
         }
 
         private void OnButtonClicked4(object sender, Tizen.NUI.Components.ClickedEventArgs e)
         {
             OutputText.Text += $"\n얼굴분석: AI를 이용하여 얼굴 분석을 시작합니다.";
             OutputText.TextColor = Color.Red;
+
+            Window.Instance.GetDefaultLayer().Add(new MainPage1());
+            this.Show();
         }
     }
 }

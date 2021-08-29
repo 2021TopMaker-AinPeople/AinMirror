@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<View x:Class="AinMirror.MainPage1"
+    xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.NUI.Components;assembly=Tizen.NUI.Components"
+    xmlns:local="clr-namespace:AinMirror" 
+    WidthSpecification="{Static LayoutParamPolicies.MatchParent}"
+    HeightSpecification="{Static LayoutParamPolicies.MatchParent}">
+
+    <View.Layout>
+        <LinearLayout LinearOrientation="Vertical" LinearAlignment="Center"></LinearLayout>
+    </View.Layout>
+
+    <ImageView x:Name="imgView"
+           ResourceUrl="*Resource*/images/analysis.png"
+           Size2D="1278, 955"           
+           PixelArea="0.0, 0.0, 1.0, 1.0"
+           FittingMode="ShrinkToFit"  
+           BackgroundColor="#000011" />
+
+    <Button x:Name="Button"
+            Position="0,0"
+            Size="250,80"              
+            Text="닫기"                          
+            TextColor="White"            
+            Clicked="OnImgClicked1" />
+</View>

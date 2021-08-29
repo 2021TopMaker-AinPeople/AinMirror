@@ -19,10 +19,10 @@
     EnableEditing="False"
     PrimaryCursorPosition="99999" />
 
-    <Button x:Name="Button1"                
-              Text="one" 
-              TextColor="White"
-              Size="300,80"
+    <c:Button x:Name="Button1"
+              StyleName="ButtonStyle1"
+              Text="촬영" 
+              TextColor="Black"              
               Position="-100,50"
               ParentOrigin="TopRight"
               PivotPoint="TopRight"              
@@ -36,28 +36,28 @@
         ParentOrigin="BottomCenter"
         PivotPoint="BottomCenter"
         PositionUsesPivotPoint="true"
-        Padding="150,0,100,0">
+        Padding="250,0,100,0">
 
         <View.Layout>
             <LinearLayout LinearOrientation="Horizontal" CellPadding="300,0"></LinearLayout>
         </View.Layout>
 
-        <Button x:Name="Button2" 
-              Text="Two"               
-              Size="300,80"
-              TextColor="White"
+        <c:Button x:Name="Button2"
+              StyleName="ButtonStyle2"
+              Text="설정"                             
+              TextColor="Black"
               Clicked="OnButtonClicked2" />
 
         <c:Button x:Name="Button3"              
               StyleName="ButtonStyle3"             
-              Text="Three"                          
-              TextColor="White"
+              Text="효과주기"                          
+              TextColor="Black"
               Clicked="OnButtonClicked3" />
 
-        <Button x:Name="Button4" 
-              Text="Four" 
-              Size="300,80"
-              TextColor="White"
+        <c:Button x:Name="Button4" 
+              StyleName="ButtonStyle4"
+              Text="얼굴분석"               
+              TextColor="Black"
               Clicked="OnButtonClicked4" />
     </View>
 
